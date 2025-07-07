@@ -2,14 +2,19 @@
   "name": "basic-bun",
   "module": "index.ts",
   "type": "module",
+  "description": "Kit de utilidades para e-commerces",
   "private": true,
   "scripts": {
     "dev": "bunx run src/index.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/prompt": "^1.1.9"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "prompt": "^1.3.0"
   }
 }
