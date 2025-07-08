@@ -4,8 +4,6 @@ import mainPrompt from "./prompts/prompt-main";
 import createQRCode from "./services/qr-core/create";
 import createPassword from "./services/password/create";
 
-const log = console.log;
-
 async function main() {
   prompt.get(mainPrompt, async (err: Error | null, result: { select: string }) => {
     if (result.select == "1") await createQRCode();
